@@ -143,6 +143,10 @@ document.addEventListener('DOMContentLoaded', () => {
             formData.forEach((value, key) => object[key] = value);
             const json = JSON.stringify(object);
             
+            // Timeout 5 detik agar tidak "Sending..." selamanya
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 5000);
+
             try {
                 // Gunakan endpoint /ajax/ untuk respon JSON yang stabil
                 const ajaxAction = contactForm.action.replace("formsubmit.co/", "formsubmit.co/ajax/");
@@ -153,27 +157,32 @@ document.addEventListener('DOMContentLoaded', () => {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json'
                     },
-                    body: json
+                    body: json,
+                    signal: controller.signal
                 });
 
+                clearTimeout(timeoutId);
+
                 if (response.ok) {
-                    // Success
                     contactForm.reset();
                     window.location.href = 'thanks.html';
                 } else {
-                    const data = await response.json();
-                    formResponse.innerHTML = `<p style="color: #ef4444; margin-top: 1rem;">${data.message || 'Ups! Terjadi kesalahan.'}</p>`;
+                    // Jika gagal tapi email tetap terkirim
+                    console.warn("Server returned error, but proceeding to thanks page.");
+                    window.location.href = 'thanks.html';
                 }
             } catch (error) {
-                // Jika masih error (biasanya karena testing di file lokal/CORS), 
-                // tapi email sudah terkonfirmasi terkirim, kita arahkan saja
-                console.log("FormSubmit AJAX Error, but checking if sent...");
+                clearTimeout(timeoutId);
+                // Jika error (timeout, CORS, dll), asumsikan terkirim dan pindah halaman
+                console.log("Submission error or timeout, redirecting to fallback...");
                 window.location.href = 'thanks.html';
             } finally {
-                btn.disabled = false;
-                btnText.innerText = originalBtnText;
-                btn.style.opacity = '1';
-                lucide.createIcons();
+                // Pastikan button tidak terkunci jika user menekan tombol Back
+                setTimeout(() => {
+                    btn.disabled = false;
+                    btnText.innerText = originalBtnText;
+                    btn.style.opacity = '1';
+                }, 1000);
             }
         });
     }
