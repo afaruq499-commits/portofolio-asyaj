@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asyaj Syifa Al Faruq | D3 Mechatronics Engineering</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+        content="Portofolio Asyaj Syifa Al Faruq - D3 Mechatronics Engineering, IoT, Automation & Computer Vision Enthusiast">
+</head>
+
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Background Elements -->
+    <div class="glow-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Asyaj<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#education">Pendidikan</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#training">Pelatihan</a></li>
+            <li><a href="#awards">Penghargaan</a></li>
+        </ul>
+        <a href="#contact" class="btn-primary btn-sm">Hubungi Saya</a>
+        <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content scroll-reveal">
+                <div class="badge-modern">Portofolio & CV Profesional</div>
+                <h1 class="title">Tackling complexity with<br><span>Engineering & Code.</span></h1>
+                <h2 class="role">I am a <span id="typing-text" class="text-highlight"></span><span
+                        class="cursor">|</span></h2>
+                <p class="hero-desc">Mahasiswa tingkat akhir D3 Mekatronika Politeknik Astra dengan minat besar di
+                    bidang IoT, Otomasi, dan Computer Vision.</p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">View Projects <i data-lucide="arrow-right"></i></a>
+                    <a href="#contact" class="btn-outline">Contact Me</a>
+                </div>
+
+                <div class="hero-social">
+                    <a href="https://linkedin.com/in/asalfaruq" target="_blank" class="social-link" title="LinkedIn"><i
+                            data-lucide="linkedin"></i></a>
+                    <a href="mailto:afaruq499@gmail.com" class="social-link" title="Email"><i
+                            data-lucide="mail"></i></a>
+                    <a href="https://wa.me/6285157771651" target="_blank" class="social-link" title="WhatsApp"><i
+                            data-lucide="message-circle"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual scroll-reveal delay-2">
+                <div class="visual-card">
+                    <img src="assets/docs/Foto Profil/1751389129748.jpg" alt="Asyaj Syifa Al Faruq"
+                        class="profile-img-hero">
+                    <div class="visual-card-backdrop"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="bg-gray">
+        <div class="section-header scroll-reveal">
+            <h2 class="section-title">Tentang Saya.</h2>
+        </div>
+        <div class="about-content scroll-reveal delay-1">
+            <div class="about-text-content">
+                <p style="font-size: 1.1rem; color: #374151; line-height: 1.6; margin-bottom: 2rem;">Mahasiswa tingkat
+                    akhir D3 Mekatronika Politeknik Astra. Spesialisasi saya ada di integrasi hardware dan software
+                    (IoT, PLC, ESP32, LoRa, hingga algoritma YOLO). Berbekal sertifikasi robotika dari ABB dan rekam
+                    jejak menjuarai berbagai kompetisi inovasi global, saya hadir sebagai eksekutor teknis. Saya tipe
+                    <b>fast-learner</b> yang fokus pada satu hal: memastikan ide teknologi tidak cuma sebatas konsep,
+                    tapi benar-benar bisa dirakit dan <b>work di lapangan</b>.
+                </p>
+
+                <div class="checklist">
+                    <div class="checklist-item">
+                        <i data-lucide="shield-check" size="20"></i>
+                        <p>Memiliki latar belakang MIPA yang diperkuat dengan kelas tambahan Teknik Komputer
+                            Jaringan (TKJ), menjadi fondasi solid dalam memahami infrastruktur IT sebelum mendalami
+                            rekayasa mekatronika.</p>
+                    </div>
+                    <div class="checklist-item">
+                        <i data-lucide="cpu" size="20"></i>
+                        <p>Mahir dalam pemrograman PLC (Omron, Mitsubishi, Haiwell), simulasi robotika (ABB
+                            RobotStudio), dan mikrokontroler (ESP32, Arduino, Raspberry Pi).</p>
+                    </div>
+                    <div class="checklist-item">
+                        <i data-lucide="factory" size="20"></i>
+                        <p>Berpengalaman mengeksekusi proyek digitalisasi dan otomasi industri, mulai dari pembuatan
+                            sistem monitoring energi pabrik berbasis LoRaWAN, hingga penerapan AI Computer Vision pada
+                            mesin produksi.</p>
+                    </div>
+                    <div class="checklist-item">
+                        <i data-lucide="database" size="20"></i>
+                        <p>Terbiasa dengan protokol komunikasi industri (LoRaWAN, Modbus RTU, TCP/IP), integrasi
+                            database (MySQL, SQL Server, Firebase), dan penulisan kode fungsional (C/C++, Python).</p>
+                    </div>
+                </div>
+
+                <div class="about-footer">
+                    <div><i data-lucide="map-pin" size="18"></i> Cileungsi, Jawa Barat, Indonesia</div>
+                    <div><span class="status-dot"></span> Tersedia untuk Proyek</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Pendidikan -->
+    <section id="education" class="bg-gray">
+        <div class="section-header scroll-reveal">
+            <h2 class="section-title">Pendidikan.</h2>
+        </div>
+        <div class="grid-2-col scroll-reveal">
+            <div class="detailed-card">
+                <div class="dc-body">
+                    <div class="dc-meta">
+                        <div class="dc-icon-badge"><i data-lucide="graduation-cap"></i></div>
+                        <div class="dc-title-group">
+                            <h3>D3 Teknik Mekatronika</h3>
+                            <div class="dc-subtitle">Politeknik Astra</div>
+                        </div>
+                        <div class="dc-date-float">2023 - 2026</div>
+                    </div>
+                    <p class="dc-desc">Fokus pada sistem otomasi terintegrasi, robotika industri, dan smart
+                        manufacturing. IPK: 3.57/4.00.</p>
+                </div>
+            </div>
+            <div class="detailed-card">
+                <div class="dc-body">
+                    <div class="dc-meta">
+                        <div class="dc-icon-badge"><i data-lucide="school"></i></div>
+                        <div class="dc-title-group">
+                            <h3>MIPA + Teknik Komputer Jaringan</h3>
+                            <div class="dc-subtitle">Pendidikan Menengah</div>
+                        </div>
+                        <div class="dc-date-float">2021 - 2023</div>
+                    </div>
+                    <p class="dc-desc">Terbiasa dengan kerangka berpikir logis dan pemecahan masalah sejak di jurusan
+                        MIPA, dipadukan dengan dasar infrastruktur IT (TKJ).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keahlian & Perangkat Section -->
+    <section id="skills" class="bg-gray">
+        <div class="section-header scroll-reveal">
+            <h2 class="section-title">Keahlian & Perangkat.</h2>
+            <p class="section-subtitle">Tingkat kemahiran teknis dan penguasaan sub-bidang otomasi.</p>
+        </div>
+
+        <div class="skills-container">
+            <!-- Part 1: Technical Proficiency Bars -->
+            <div class="proficiency-list mb-10">
+                <!-- Bar 1 -->
+                <div class="skill-bar-group scroll-reveal">
+                    <div class="skill-bar-header">
+                        <div class="skill-bar-title">Industrial Automation <span>(PLC Programming, HMI Design,
+                                Electro-Pneumatic & Hydraulic, Wiring)</span></div>
+                        <div class="skill-percent">88%</div>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" data-width="88%"></div>
+                    </div>
+                </div>
+
+                <!-- Bar 2 -->
+                <div class="skill-bar-group scroll-reveal delay-1">
+                    <div class="skill-bar-header">
+                        <div class="skill-bar-title">Embedded Systems & Microcontrollers <span>(Arduino, ESP32,
+                                C/C++, Raspberry Pi)</span></div>
+                        <div class="skill-percent">95%</div>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" data-width="95%"></div>
+                    </div>
+                </div>
+
+                <!-- Bar 3 -->
+                <div class="skill-bar-group scroll-reveal delay-2">
+                    <div class="skill-bar-header">
+                        <div class="skill-bar-title">IoT Platforms & Data Visualization <span>(Node-RED,
+                                MQTT, Firebase)</span></div>
+                        <div class="skill-percent">92%</div>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" data-width="92%"></div>
+                    </div>
+                </div>
+
+                <!-- Bar 4 -->
+                <div class="skill-bar-group scroll-reveal delay-1">
+                    <div class="skill-bar-header">
+                        <div class="skill-bar-title">Database & Backend Tools <span>(MySQL, SQL Server, Firebase)</span>
+                        </div>
+                        <div class="skill-percent">78%</div>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" data-width="78%"></div>
+                    </div>
+                </div>
+
+                <!-- Bar 5 -->
+                <div class="skill-bar-group scroll-reveal delay-2">
+                    <div class="skill-bar-header">
+                        <div class="skill-bar-title">App & UI Development <span>(Android Studio - Java/Kotlin, XML UI
+                                Design)</span></div>
+                        <div class="skill-percent">75%</div>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" data-width="75%"></div>
+                    </div>
+                </div>
+
+                <!-- Bar 6 -->
+                <div class="skill-bar-group scroll-reveal delay-3">
+                    <div class="skill-bar-header">
+                        <div class="skill-bar-title">CAD & PCB Design <span>(Creo Parametric 3D Modeling, KiCad PCB
+                                Design)</span></div>
+                        <div class="skill-percent">75%</div>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" data-width="75%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2: Expertise Summary Cards -->
+            <div class="expertise-summary scroll-reveal">
+                <!-- Automation -->
+                <div class="exp-card glass-card">
+                    <div class="exp-badge">Automation</div>
+                    <h3>PLC Programming and HMI Design</h3>
+                    <p>Omron, Mitsubishi, Haiwell</p>
+                </div>
+
+                <!-- IoT -->
+                <div class="exp-card glass-card">
+                    <div class="exp-badge">IoT</div>
+                    <h3>Embedded Systems & Microcontrollers</h3>
+                    <p>Arduino IDE, ESP32/ESP8266, Raspberry Pi</p>
+                </div>
+
+                <!-- Mechanical -->
+                <div class="exp-card glass-card">
+                    <div class="exp-badge">Mechanical</div>
+                    <h3>CAD & PCB Design</h3>
+                    <p>Creo Parametric (3D Modeling),<br>KiCad (PCB Design)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Proyek -->
+    <section id="projects" class="bg-gray">
+        <div class="section-header scroll-reveal">
+            <h2 class="section-title">Proyek Saya.</h2>
+        </div>
+
+        <div class="projects-wrapper">
+            <!-- Project: AI Pendeteksi Box -->
+            <div class="detailed-card scroll-reveal has-multiple-images">
+                <div class="card-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img
+                                src="Gambar/Project/AI Pendeteksi Box untuk double verification Robot Swaging/Screenshot 2026-03-04 092600.png"
+                                alt="AI Detection 1"></div>
+                        <div class="carousel-slide"><img
+                                src="Gambar/Project/AI Pendeteksi Box untuk double verification Robot Swaging/Screenshot 2026-04-03 042515.png"
+                                alt="AI Detection 2"></div>
+                        <div class="carousel-slide"><img
+                                src="Gambar/Project/AI Pendeteksi Box untuk double verification Robot Swaging/Screenshot 2026-04-03 042610.png"
+                                alt="AI Detection 3"></div>
+                        <div class="carousel-slide"><img
+                                src="Gambar/Project/AI Pendeteksi Box untuk double verification Robot Swaging/WhatsApp Image 2026-04-03 at 04.21.38.jpeg"
+                                alt="AI Detection 4"></div>
+                    </div>
+                    <div class="carousel-nav"></div>
+                </div>
+                <div class="dc-body">
+                    <h3 class="mb-2">AI Box Verification - Robot Swaging</h3>
+                    <p class="dc-desc">Sistem Computer Vision berbasis YOLO untuk verifikasi ganda keberadaan box pada
+                        proses picking Robot Swaging guna mencegah error produksi di line otomatis.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">Computer Vision</span><span class="tag-ind">YOLO</span><span
+                            class="tag-ind">Python</span><span class="tag-ind">Industrial AI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project: Smart Traffic -->
+            <div class="detailed-card scroll-reveal delay-1 has-multiple-images">
+                <div class="card-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img
+                                src="Gambar/Project/Miniatur Simulasi Smart Traffic & Emergency Detector/WhatsApp Image 2026-04-03 at 04.34.34 (1).jpeg"
+                                alt="Smart Traffic 1"></div>
+                        <div class="carousel-slide"><img
+                                src="Gambar/Project/Miniatur Simulasi Smart Traffic & Emergency Detector/WhatsApp Image 2026-04-03 at 04.34.34 (2).jpeg"
+                                alt="Smart Traffic 2"></div>
+                        <div class="carousel-slide"><img
+                                src="Gambar/Project/Miniatur Simulasi Smart Traffic & Emergency Detector/WhatsApp Image 2026-04-03 at 04.34.34 (3).jpeg"
+                                alt="Smart Traffic 3"></div>
+                        <div class="carousel-slide"><img
+                                src="Gambar/Project/Miniatur Simulasi Smart Traffic & Emergency Detector/WhatsApp Image 2026-04-03 at 04.34.34.jpeg"
+                                alt="Smart Traffic 4"></div>
+                    </div>
+                    <div class="carousel-nav"></div>
+                </div>
+                <div class="dc-body">
+                    <h3 class="mb-2">Smart Traffic & Emergency Detector</h3>
+                    <p class="dc-desc">Miniatur simulasi sistem lalu lintas cerdas yang dilengkapi pendeteksi kendaraan
+                        darurat (Ambulans/Damkar) menggunakan sensor IoT untuk prioritas lampu hijau.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">IoT</span><span class="tag-ind">Smart Traffic</span><span
+                            class="tag-ind">YOLO</span><span class="tag-ind">Computer Vision</span><span
+                            class="tag-ind">Prototyping</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 1: Automated Gallon -->
+            <div class="detailed-card scroll-reveal has-multiple-images">
+                <div class="card-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Automated Gallon Inventory Management System for Astra Sunter/WhatsApp Image 2026-04-03 at 00.58.36 (1).jpeg"
+                                alt="G1"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Automated Gallon Inventory Management System for Astra Sunter/WhatsApp Image 2026-04-03 at 00.58.36.jpeg"
+                                alt="G2"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Automated Gallon Inventory Management System for Astra Sunter/WhatsApp Image 2026-04-03 at 00.58.37.jpeg"
+                                alt="G3"></div>
+                    </div>
+                    <div class="carousel-nav"></div>
+                </div>
+                <div class="dc-body">
+                    <h3 class="mb-2">Automated Gallon Inventory Management</h3>
+                    <p class="dc-desc">Sistem monitoring stok galon industri secara real-time berbasis IoT untuk
+                        efisiensi warehouse Astra Sunter.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">ESP32</span><span class="tag-ind">Sensors</span><span
+                            class="tag-ind">IoT</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Monitoring Kwh -->
+            <div class="detailed-card scroll-reveal delay-1 has-multiple-images">
+                <div class="card-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Monitoring Kwh menggunakan LoraWan di 5 gedung produksi/Alat di Lapangan.jpeg"
+                                alt="K1"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Monitoring Kwh menggunakan LoraWan di 5 gedung produksi/Alur Kerja.png"
+                                alt="K2"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Monitoring Kwh menggunakan LoraWan di 5 gedung produksi/Website.png"
+                                alt="K3"></div>
+                    </div>
+                    <div class="carousel-nav"></div>
+                </div>
+                <div class="dc-body">
+                    <h3 class="mb-2">Monitoring Kwh LoraWan Industrial</h3>
+                    <p class="dc-desc">Pemantauan konsumsi daya terpusat di 5 gedung produksi menggunakan LoRaWAN untuk
+                        transmisi data jarak jauh.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">LoRaWAN</span><span class="tag-ind">Modbus RTU</span><span
+                            class="tag-ind">TCP/IP</span><span class="tag-ind">Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Alat Peraga -->
+            <div class="detailed-card scroll-reveal has-multiple-images">
+                <div class="card-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Desain Alat Peraga pada Praktikum Logistik Terintegrasi/WhatsApp Image 2026-04-03 at 00.53.48 (1).jpeg"
+                                alt="P1"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Desain Alat Peraga pada Praktikum Logistik Terintegrasi/WhatsApp Image 2026-04-03 at 00.53.48.jpeg"
+                                alt="P2"></div>
+                    </div>
+                    <div class="carousel-nav"></div>
+                </div>
+                <div class="dc-body">
+                    <h3 class="mb-2">Desain Alat Peraga Praktikum Logistik</h3>
+                    <p class="dc-desc">Rancang bangun alat simulasi sistem logistik industri untuk kebutuhan praktikum
+                        logistik terintegrasi.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">Mechatronics</span><span class="tag-ind">Logistics</span><span
+                            class="tag-ind">Prototyping</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: PCB LoRaWAN -->
+            <div class="detailed-card scroll-reveal delay-1 has-multiple-images">
+                <div class="card-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Desain Layout & Routing Jalur PCB untuk Modul LoRaWAN Embedded/3D Desain.png"
+                                alt="L1"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Desain Layout & Routing Jalur PCB untuk Modul LoRaWAN Embedded/Alat di Lapangan.jpeg"
+                                alt="L2"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Desain Layout & Routing Jalur PCB untuk Modul LoRaWAN Embedded/Layout Jalur.png"
+                                alt="L3"></div>
+                    </div>
+                    <div class="carousel-nav"></div>
+                </div>
+                <div class="dc-body">
+                    <h3 class="mb-2">PCB Layout Modul LoRaWAN Embedded</h3>
+                    <p class="dc-desc">Perancangan sirkuit dan layout PCB untuk node sensor IoT berbasis LoRaWAN dengan
+                        form factor ringkas.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">KiCad</span><span class="tag-ind">PCB Design</span><span
+                            class="tag-ind">LoRaWAN</span><span class="tag-ind">Hardware</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: PCB Smart Temperature -->
+            <div class="detailed-card scroll-reveal has-multiple-images">
+                <div class="card-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Desain Layout & Routing Jalur PCB untuk Modul Controller Smart Temperature/3D Desain.png"
+                                alt="T1"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Project/Desain Layout & Routing Jalur PCB untuk Modul Controller Smart Temperature/Layout Jalur.png"
+                                alt="T2"></div>
+                    </div>
+                    <div class="carousel-nav"></div>
+                </div>
+                <div class="dc-body">
+                    <h3 class="mb-2">PCB Controller Smart Temperature</h3>
+                    <p class="dc-desc">Desain layout dan routing sirkuit controller suhu industri dengan integrasi
+                        display dan sensor DHT11.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">PCB Design</span><span class="tag-ind">Controller</span><span
+                            class="tag-ind">Smart Temp</span><span class="tag-ind">KiCad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Pengalaman -->
+    <section id="experience">
+        <div class="section-header scroll-reveal">
+            <h2 class="section-title">Pengalaman Organisasi.</h2>
+            <p class="section-subtitle">Kepemimpinan dan keterlibatan aktif dalam organisasi kampus.</p>
+        </div>
+        <div class="awards-grid scroll-reveal">
+            <!-- Experience 1: Ketua UKM -->
+            <div class="detailed-card has-multiple-images">
+                <div class="card-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Sertifikat Organisasi/Ketua UKM Robotic 2025/1770885958119.jpg"
+                                alt="E1"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Sertifikat Organisasi/Ketua UKM Robotic 2025/1770886304842.jpg"
+                                alt="E2"></div>
+                    </div>
+                    <div class="carousel-nav"></div>
+                </div>
+                <div class="dc-body">
+                    <h3>Ketua UKM Robotic AstraTECH</h3>
+                    <p class="dc-desc">Memimpin organisasi riset teknologi robotika kampus, mengelola 40+ anggota aktif
+                        dan koordinasi kompetisi internal.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">Leadership</span><span class="tag-ind">Robotika</span><span
+                            class="tag-ind">Communication</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 2: Koor IoT -->
+            <div class="detailed-card">
+                <img src="assets/docs/Sertifikat Organisasi/Koor IoT Akademik Himma Mekaatronika/1770888183416 (1).jpg"
+                    alt="E3" class="dc-header-img">
+                <div class="dc-body">
+                    <h3>Kepala Divisi IoT</h3>
+                    <div class="dc-subtitle">HIMMA Mekatronika</div>
+                    <p class="dc-desc">Mengembangkan kurikulum pelatihan IoT dan infrastruktur monitoring untuk riset
+                        mahasiswa mekatronika.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">IoT</span><span class="tag-ind">Kurikulum</span><span
+                            class="tag-ind">Networking</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 3: Koor Kewirausahaan -->
+            <div class="detailed-card">
+                <img src="assets/docs/Sertifikat Organisasi/Koor Kewirausahaan HIMMA Mekatronika/1770888183416.jpg"
+                    alt="E4" class="dc-header-img">
+                <div class="dc-body">
+                    <h3>Koordinator Kewirausahaan</h3>
+                    <div class="dc-subtitle">HIMMA Mekatronika</div>
+                    <p class="dc-desc">Mengelola divisi ekonomi kreatif organisasi untuk mendanai riset dan kegiatan
+                        mahasiswa mekatronika.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">Entrepreneurship</span><span class="tag-ind">Networking</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience 4: PIC Acara -->
+            <div class="detailed-card">
+                <img src="assets/docs/Sertifikat Organisasi/PIC Acara UKM Robotic 2024/Screenshot 2026-04-03 004316.png"
+                    alt="E5" class="dc-header-img">
+                <div class="dc-body">
+                    <h3>PIC Acara UKM Robotic 2024</h3>
+                    <p class="dc-desc">Bertanggung jawab atas teknis pelaksanaan acara robotika kampus dan koordinasi
+                        lintas divisi.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">Event Organizer</span><span class="tag-ind">Robotika</span><span
+                            class="tag-ind">Communication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Pelatihan -->
+    <section id="training" class="bg-gray">
+        <div class="section-header scroll-reveal">
+            <h2 class="section-title">Pelatihan & Sertifikasi.</h2>
+            <p class="section-subtitle">Validasi kompetensi teknis dan rekayasa mekatronika profesional.</p>
+        </div>
+        <div class="awards-grid scroll-reveal">
+            <!-- Training 1: ABB STEM -->
+            <div class="detailed-card">
+                <img src="assets/docs/Sertifikat Pelatihan/Sertifikasi ABB STEM/Screenshot 2026-04-03 022257.png"
+                    alt="ABB" class="dc-header-img">
+                <div class="dc-body">
+                    <h3>Sertifikasi Robotika ABB STEM</h3>
+                    <div class="dc-subtitle">ABB Robotics | Certified by STEM.org</div>
+                    <p class="dc-desc">Sertifikasi industrial untuk pengoperasian robot kolaboratif ABB GoFa dengan
+                        sistem kontrol OmniCore.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">ABB Robotics</span><span class="tag-ind">GoFa</span><span
+                            class="tag-ind">STEM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training 2: PLC -->
+            <div class="detailed-card">
+                <img src="assets/docs/Sertifikat Pelatihan/Pelatihan Pemrograman Dasar PLC dan Perawatan Dasar/Screenshot 2026-04-03 022234.png"
+                    alt="PLC" class="dc-header-img">
+                <div class="dc-body">
+                    <h3>Pemrograman & Perawatan PLC</h3>
+                    <div class="dc-subtitle">Technical Training Program</div>
+                    <p class="dc-desc">Kompetensi teknis dalam perancangan logika industri (Ladder Diagram) dan
+                        pemeliharaan perangkat keras PLC.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">PLC</span><span class="tag-ind">Automation</span><span
+                            class="tag-ind">Maintenance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Awards Section -->
+    <section id="awards">
+        <div class="section-header scroll-reveal">
+            <h2 class="section-title">Awards.</h2>
+            <p class="section-subtitle">Recognition for innovation and technical excellence.</p>
+        </div>
+        <div class="awards-grid scroll-reveal">
+            <!-- GIS Award -->
+            <div class="detailed-card has-multiple-images">
+                <div class="card-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Sertifikat Lomba/Lomba Essay Global Innovation Sprint x Office Olympic 2025/Gold Medal - Essay GIS.png"
+                                alt="A1"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Sertifikat Lomba/Lomba Essay Global Innovation Sprint x Office Olympic 2025/Best Idea - Essay GIS.png"
+                                alt="A2"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Sertifikat Lomba/Lomba Essay Global Innovation Sprint x Office Olympic 2025/Best Team - Essay GIS.png"
+                                alt="A3"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Sertifikat Lomba/Lomba Essay Global Innovation Sprint x Office Olympic 2025/2nd Place Winner - Essay GIS.png"
+                                alt="A4"></div>
+                    </div>
+                    <div class="carousel-nav"></div>
+                </div>
+                <div class="dc-body">
+                    <h3>Juara 2 & Gold Medal - Global Innovation Sprint</h3>
+                    <div class="dc-subtitle">Univ. Airlangga | Global Level</div>
+                    <p class="dc-desc">Pemenang Medali Emas sekaligus meraih penghargaan <b>Best Team</b> dan <b>Best
+                            Idea</b> untuk solusi teknologi inovatif berkelanjutan.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">Gold Medal</span><span class="tag-ind">Best Idea</span><span
+                            class="tag-ind">Best Team</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elektro Expo -->
+            <div class="detailed-card has-multiple-images">
+                <div class="card-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Sertifikat Lomba/Kategori Internet of Things (IoT) - Lomba Inovasi Elektro Expo/1770946692210.jpg"
+                                alt="A5"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Sertifikat Lomba/Kategori Internet of Things (IoT) - Lomba Inovasi Elektro Expo/1770946691952.jpg"
+                                alt="A6"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Sertifikat Lomba/Kategori Internet of Things (IoT) - Lomba Inovasi Elektro Expo/Screenshot 2026-04-03 022423.png"
+                                alt="A6-1"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Sertifikat Lomba/Kategori Internet of Things (IoT) - Lomba Inovasi Elektro Expo/Screenshot 2026-04-03 022438.png"
+                                alt="A6-2"></div>
+                    </div>
+                    <div class="carousel-nav"></div>
+                </div>
+                <div class="dc-body">
+                    <h3>1st & 2nd Place - Elektro Expo</h3>
+                    <p class="dc-desc">Juara 1 Desain Inovasi Produk & Juara 2 IoT di Polines Semarang.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">Polines</span><span class="tag-ind">IoT</span><span
+                            class="tag-ind">Product Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ASTRAVATE -->
+            <div class="detailed-card">
+                <img src="assets/docs/Sertifikat Lomba/Perlombaan Studi Kasus ASTRAVATE 2024/Screenshot 2026-04-03 000611.png"
+                    alt="A7" class="dc-header-img">
+                <div class="dc-body">
+                    <h3>Juara 1 Studi Kasus ASTRAVATE</h3>
+                    <p class="dc-desc">Pemenang kompetisi studi kasus industrial yang diselenggarakan oleh BEM
+                        Politeknik Astra.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">Case Study</span><span class="tag-ind">Astra</span><span
+                            class="tag-ind">Automation</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BMC UNNES -->
+            <div class="detailed-card has-multiple-images">
+                <div class="card-carousel">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Sertifikat Lomba/Lomba Business Model Canvas/Screenshot 2026-04-03 000723.png"
+                                alt="A8"></div>
+                        <div class="carousel-slide"><img
+                                src="assets/docs/Sertifikat Lomba/Lomba Business Model Canvas/Screenshot 2026-04-03 010756.png"
+                                alt="A9"></div>
+                    </div>
+                    <div class="carousel-nav"></div>
+                </div>
+                <div class="dc-body">
+                    <h3>Juara 1 Lomba Business Model Canvas</h3>
+                    <div class="dc-subtitle">UNNES</div>
+                    <p class="dc-desc">Juara 1 perancangan model bisnis inovatif untuk produk teknologi masa depan.</p>
+                    <div class="tags-industrial">
+                        <span class="tag-ind">Business</span><span class="tag-ind">UNNES</span><span
+                            class="tag-ind">BMC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Penutup/Kontak -->
+    <section id="contact">
+        <div class="container scroll-reveal">
+            <div class="contact-card glass-card">
+                <h2 class="section-title text-center">Hubungi Saya.</h2>
+                <p class="text-center mb-5">Tertarik untuk berkolaborasi atau ingin mengetahui lebih lanjut tentang
+                    proyek saya? Kirimkan pesan sekarang!</p>
+
+                <form class="contact-form" action="https://formsubmit.co/afaruq499@gmail.com" method="POST"
+                    id="contactForm">
+                    <!-- Penonaktifan Captcha untuk kemudahan -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- Halaman tujuan setelah sukses (opsional) -->
+                    <input type="hidden" name="_next" value="https://asyaj-faruq.github.io/thanks.html">
+
+                    <div class="input-group">
+                        <label for="name">Nama Lengkap</label>
+                        <input type="text" name="name" id="name" placeholder="Nama Anda..." required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" name="email" id="email" placeholder="nama@perusahaan.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Pesan Anda</label>
+                        <textarea name="message" id="message" rows="4" placeholder="Bagaimana saya bisa membantu Anda?"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%; transition: all 0.3s ease;">
+                        <span class="btn-text">Kirim Pesan</span> <i data-lucide="send"></i>
+                    </button>
+                    <div id="formResponse" class="form-response"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Asyaj Syifa Al Faruq.</p>
+            <p>Designed with clean code & modern aesthetics.</p>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="modal-close">&times;</span>
+        <button class="modal-prev" id="modalPrev">&#10094;</button>
+        <button class="modal-next" id="modalNext">&#10095;</button>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
